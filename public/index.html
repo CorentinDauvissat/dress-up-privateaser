@@ -2,21 +2,56 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+    <h1 style="color:blue;">Privateaser</h1></br>
+	<h3>Easy invoice generator</h3></br>
+	<p>Welcome to this page !<br/><br/>
+		Privateaser is a website to easily book a bar, a restaurant or a room for you and your friends or your colleagues.<br/>
+		Here, you can have the price of your booking, according to the features fixed by the bar : </p>
+	<ul>
+		<li>The price per hour</li>
+		<li>The price per person</li>
+		<li>The time in hour </li>
+		<li>The number of persons</li>
+	</ul>
+	
+	<p>You can also choose a deductible option in case of an accident/theft</p><br/>
+	
+	<ul>
+	<h4>Please enter the informations :</h4>
+	
+	<div id="bar">
+	  <label>Bar name :
+		<input class="js-name" type="text" placeholder="Bar name"/>
+	  <label/>
+	  <label>Price by hour (in €) : 
+		<input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+	  <label/>
+	  <label>Price by person (in €) :
+		<input class="js-price-by-person" type="number" placeholder="Price by person"/>
+	  <label/>
     </div>
     <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+      <label>Booker name :
+		<input class="js-name" type="text" placeholder="Booker name"/>
+	  <label/>
+      <label>Time (in h) : 
+		<input class="js-time" type="number" placeholder="Time in h"/>
+	  <label/>
+	  <label>Number of persons :
+		<input class="js-persons" type="number" placeholder="Persons"/>
+	  <label/>
+	  <label>
+		<input class="js-option" type="checkbox" style="float: left; margin-top: 5px" placeholder="Deductible option"/>
+		 Check this box if you choose the deductible option
+	  <label/>
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+	<button id="compute">Compute</button>
+    <div id="actors" style="color:blue">
+		
+	</div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
   </body>
